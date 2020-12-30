@@ -9,8 +9,9 @@
 - CSS  [https://developer.mozilla.org/fr/docs/Web/CSS],
 - BOOTSTRAP [https://getbootstrap.com/],
 - HTML [https://developer.mozilla.org/fr/docs/Web/HTML],
-- ejs  [https://ejs.co/]
-- express   [https://expressjs.com/fr/]
+- EJS  [https://ejs.co/]
+- EXPRESS   [https://expressjs.com/fr/]
+- AJAX [https://developer.mozilla.org/fr/docs/Web/Guide/AJAX]
 
 ### CSS
 
@@ -21,8 +22,8 @@
 ```
 npm i
 ```
-### COMMANDE 
-####
+### COMMANDE
+
 <!--Use this command before trying to start the server because you don't have style.css in my strategi .gitignore -->
 ```
 - less-watch-compiler assets public style.less
