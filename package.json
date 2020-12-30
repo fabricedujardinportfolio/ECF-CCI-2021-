@@ -1,0 +1,19 @@
+{
+  "name": "storefront-fabrice",
+  "version": "1.0.0",
+  "description": "Site ecf for CCI exame",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "nodemon":"nodemon app.js "
+  },
+  "author": "Fabrice",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.5",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "less": "^4.0.0"
+  }
+}

@@ -1,0 +1,85 @@
+// BACKGOUND COLOR
+@color-backgroud-global: white;
+@background-color-section-top-home: #393935;
+@background-section-top-home: url('image/plates-header.jpg');
+// @color-background-secondary: white;
+
+// TEXT
+@color-global-text: black;
+@color-secondary: white;
+@color-tiers: rgb(57, 57, 53);
+
+// MARGIN
+@margin-top-5: 5%;
+@margin-top-10: 10%;
+@margin-auto: auto;
+
+// HEIGHT
+@height-size-100vh: 100vh;
+@height-size-225px: 225px;
+@height-section-top-home: 300px;
+
+//WIDTH
+@width-100-100: 100%;
+
+
+
+
+body {
+    background-color: @color-backgroud-global;
+    color: @color-global-text;
+    padding: 0;
+    margin: 0;
+    height: @height-size-100vh;
+}
+
+// HEADER TOP 
+//Header top parents>child
+.verticalealigne-header-home {
+    margin: @margin-auto;
+}
+
+.nav-a-color {
+    text-decoration: none;
+    color: @color-tiers;
+    font-weight: 800;
+    font-family: "Arial",
+        sans-serif;
+    padding: 1%;
+    font-size: 12px;
+}
+
+// END HEADER
+
+// TOP HOME
+// section-top-home parents
+.background-section-master-top-home {
+    background-image: @background-section-top-home;
+    height: @height-section-top-home;
+    color: @color-secondary;
+}
+
+// top-home parents>child
+.background-color-section-child-top-home {
+    background-color: @background-color-section-top-home;
+}
+
+//top-home parents>child>child
+.verticalealigne-section-home {
+    margin-top: @margin-top-10;
+}
+
+// END TOp HOME
+
+// ALL PRODUCT HOMME
+// Container parents
+
+.container-parents-products {
+    margin-top: @margin-top-5;
+}
+
+//Cards product
+.width100 {
+    width: @width-100-100;
+    height: @height-size-225px;
+}
