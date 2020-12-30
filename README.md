@@ -14,7 +14,7 @@
 
 ### CSS
 
-#### LESS
+- LESS
 
  
 ### Install the project dependencies
@@ -24,11 +24,15 @@ npm i
 ### COMMANDE 
 ####
 <!--Use this command before trying to start the server because you don't have style.css in my strategi .gitignore -->
+```
 - less-watch-compiler assets public style.less
+```
 <!-- COMMANDE FOR RUN COMPILATION LESS IN CSS-->
 
 <!-- Run my server -->
+```
 - npm run nodemon 
+```
 <!-- Automatically changes after recording my app.js  -->
 
 
