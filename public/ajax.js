@@ -5,10 +5,12 @@ function displayPost(posts) {
                 product.classList.add('col');
                 product.innerHTML = `             
                         <div class="card shadow-sm">
+                        <a href="/product-details-${post.productid}">
                             <div>
                                 <img src="image/${post.image}" alt="product for user" class="width100"></div>
                                 <title>PRODUCT</title>
-                            </div>
+                            </div>                            
+                            </a>
                             <div class="card-body text-center">
                                 <small class="text-muted">${post.brand}</small>
                                 <p class="card-text">${post.title}</p>

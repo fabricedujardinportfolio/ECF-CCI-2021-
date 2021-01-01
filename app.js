@@ -16,9 +16,26 @@ app.get('/', (req, res) => {
     res.render('home',{message:message})
 })
 
-app.get('/product-details', (req, res) => {
-    res.render('product-details')
+app.get('/product-details-1', (req, res) => {
+    res.render('product-details-1')
 })
+app.get('/product-details-2', (req, res) => {
+    res.render('product-details-2')
+})
+
+app.get('/product-details-3', (req, res) => {
+    res.render('product-details-3')
+})
+app.get('/product-details-4', (req, res) => {
+    res.render('product-details-4')
+})
+app.get('/product-details-5', (req, res) => {
+    res.render('product-details-5')
+})
+app.get('/product-details-6', (req, res) => {
+    res.render('product-details-6')
+})
+
 
 app.get('/cart', (req, res) => {
     res.render('cart')
