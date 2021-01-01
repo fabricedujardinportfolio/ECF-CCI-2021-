@@ -1,3 +1,4 @@
+
 function displayPost(posts) {
             posts.forEach(post => {
                 // console.log(post);
@@ -24,6 +25,7 @@ function displayPost(posts) {
         xhr.onreadystatechange = function () {
             if (xhr.readyState === 4) {
                 var response = JSON.parse(xhr.responseText);
+                console.log(response);
                 displayPost(response);
             }
         };
