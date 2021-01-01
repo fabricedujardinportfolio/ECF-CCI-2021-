@@ -14,7 +14,7 @@ function displayPost(posts) {
                             <div class="card-body text-center">
                                 <small class="text-muted">${post.brand}</small>
                                 <p class="card-text">${post.title}</p>
-                                <small class="text-muted">${post.price}</small>
+                                <small class="text-muted">$ ${post.price}.00</small>
                             </div>
                     </div>`
                 document.getElementById('reponse').appendChild(product);
