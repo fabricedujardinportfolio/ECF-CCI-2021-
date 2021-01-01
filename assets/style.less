@@ -8,10 +8,16 @@
 @color-global-text: black;
 @color-secondary: white;
 @color-tiers: rgb(57, 57, 53);
+@text-center: text-center;
+
+//font-size
+@font-size-h2: 3em;
+@font-size-small: 1.2em;
 
 // MARGIN
 @margin-top-5: 5%;
 @margin-top-10: 10%;
+@margin-top-35: 35%;
 @margin-auto: auto;
 
 // HEIGHT
@@ -22,6 +28,11 @@
 //WIDTH
 @width-100-100: 100%;
 
+// POSITION CENTER
+@place-content-center: center;
+
+//BORDER
+@border-bottom-gray: solid 1px gray;
 
 
 
@@ -82,4 +93,40 @@ body {
 .width100 {
     width: @width-100-100;
     height: @height-size-225px;
+}
+
+// PRODUCT DETAILS PAGE
+// Container parentss
+.place-content-center {
+    place-content: @place-content-center;
+}
+
+//Product 
+.border-bottom-gray {
+    border-bottom: @border-bottom-gray;
+}
+
+.position {
+    margin-top: @margin-top-5;
+}
+
+.font-size-h2 {
+    font-size: @font-size-h2;
+}
+
+.font-size-small {
+    font-size: @font-size-small;
+}
+
+.bg-color {
+    background-color: rgb(187, 187, 187);
+}
+
+.margin35 {
+    margin-top: @margin-top-35;
+
+}
+
+.bg-color-2 {
+    background-color: rgb(230, 227, 227);
 }

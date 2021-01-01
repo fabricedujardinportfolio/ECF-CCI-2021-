@@ -4,7 +4,65 @@
 <body>
     <%- include('partials/header'); %>
     <%- include('product-details-layout/breadcrumb'); %>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col"></div>
+            <div class="col-6">
+                <img src="image/hand-painted-blue-flat-dish.jpg" alt="" style="height: 400px; width: 100%;">
+            </div>
+            <div class="col-5">
+                <div class="container-fluid h-100 ">
+                    <div class="col-12 border-bottom-gray h-75 text-center">
+                        <small class="position font-size-small text-muted"> <strong>Kiriko</strong> </small>
+                        <h2 class="position font-size-h2">Hand Hand Painted Blue Flat Dish</h2>
+                        <small class="position font-size-small text-muted">$28.00</small>
+                        <p class="position text-muted">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta
+                            ipsum
+                            suscipit quae libero
+                            corporis iusto dolorum unde architecto soluta sequi non, sint iure ab. Nesciunt ea dolores
+                            rerum! Labore, maxime.</p>
+                    </div>
+                    <div class="row mt-5">
+                        <div class="col-3"></div>
+                        <div class="col-3">
+                            <div class="row">
+                                <div class="col-6 bg-color ">
+                                    <div id="result" class="text-center text-white margin35"><strong>0</strong></div>
+                                </div>
+                                <div class="col-6">
+                                    <div onclick="plus()" class="bg-color-2 text-center" style="margin: 0 0px 10px 0;">
+                                        <span>+</span></div>
+                                    <div onclick="moin()" class="bg-color-2 text-center"><span>-</span> </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" col-5">
+                            <button class="h-100 w-100 bg-dark text-white">ADD To CART</button>
+                        </div>
+                        <div class=" col-1"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <%- include('partials/footer'); %>
+    <script>
+        var clicks = 0;
+
+        function plus() {
+            clicks += 1;
+            document.getElementById("result").innerHTML = clicks;
+        };
+
+        function moin() {
+            if (clicks > 0) {
+                clicks -= 1;
+                document.getElementById("result").innerHTML = clicks;
+            } else {
+                clicks = 0;
+            }
+        };
+    </script>
 </body>
 
 </html>

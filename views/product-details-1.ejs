@@ -4,7 +4,37 @@
 <body>
     <%- include('partials/header'); %>
     <%- include('product-details-layout/breadcrumb'); %>
+    <div class="" id="reponse1"></div>
     <%- include('partials/footer'); %>
+    <script>
+        function displayPost1(posts) {
+            // console.log(post);
+            let product = document.createElement('div');
+            product.classList.add('col');
+            product.innerHTML = `
+        <div class="card shadow-sm">
+                <div>
+                    <img src="image/${image[0]}" alt="product for user" class="width100"></div>
+                <title>PRODUCT 1</title>
+        </div>
+        <div class="card-body text-center">
+            <small class="text-muted">${brand[0]}</small>
+            <p class="card-text">${title[0]}</p>
+            <small class="text-muted">${price[0]}</small>
+        </div>
+        </div>`
+            document.getElementById('reponse1').innerHTML(product);
+        }
+        var xhr = new XMLHttpRequest();
+        xhr.onreadystatechange = function () {
+            if (xhr.readyState === 4) {
+                var response = JSON.parse(xhr.responseText);
+                displayPost1(response);
+            }
+        };
+        xhr.open('GET', 'products.txt', true);
+        xhr.send();
+    </script>
 </body>
 
 </html>
