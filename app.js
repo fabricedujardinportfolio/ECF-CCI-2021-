@@ -17,11 +17,11 @@ app.get('/', (req, res) => {
 })
 
 app.get('/product-details', (req, res) => {
-    res.render('pages/product-details')
+    res.render('product-details')
 })
 
 app.get('/cart', (req, res) => {
-    res.render('pages/cart')
+    res.render('cart')
 })
 
 app.listen(3000)
