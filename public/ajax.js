@@ -7,11 +7,11 @@ function displayPost(posts) {
                         <div class="card shadow-sm">
                             <div>
                                 <img src="image/${post.image}" alt="product for user" class="width100"></div>
-                                <title>${post.title}</title>
+                                <title>PRODUCT</title>
                             </div>
-                            <div class="card-body">
-                                <span>${post.brand}</span>
-                                <p class="card-text">${post.description}</p>
+                            <div class="card-body text-center">
+                                <small class="text-muted">${post.brand}</small>
+                                <p class="card-text">${post.title}</p>
                                 <small class="text-muted">${post.price}</small>
                             </div>
                     </div>`
