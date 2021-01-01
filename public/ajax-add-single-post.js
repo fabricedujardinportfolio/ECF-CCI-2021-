@@ -1,9 +1,9 @@
-let url1  = "/product-details-1";
-let url2  = "/product-details-2";
-let url3  = "/product-details-3";
-let url4  = "/product-details-4";
-let url5  = "/product-details-5";
-let url6  = "/product-details-6";
+let url1 = "/product-details-1";
+let url2 = "/product-details-2";
+let url3 = "/product-details-3";
+let url4 = "/product-details-4";
+let url5 = "/product-details-5";
+let url6 = "/product-details-6";
 
 let postid = 0;
 
@@ -27,36 +27,74 @@ if (url6 == window.location.pathname) {
     postid = 5;
 }
 
-console.log(postid)
+console.log(postid);
 
-function displayPost(postid) {
-            postid.forEach(post => {
-                // console.log(post);
-                let product = document.createElement('div');
-                product.classList.add('col');
-                product.innerHTML = `             
-                        <div class="card shadow-sm">
-                        <a href="/product-details-${post.productid[0]}">
-                            <div>
-                                <img src="image/${post.image[0]}" alt="product for user" class="width100"></div>
-                                <title>PRODUCT</title>
-                            </div>                            
-                            </a>
-                            <div class="card-body text-center">
-                                <small class="text-muted">${post.brand[0]}</small>
-                                <p class="card-text">${post.title[0]}</p>
-                                <small class="text-muted">$ ${post.price[0]}.00</small>
+function displayPost(item) {
+    console.log(item);
+    let product = document.createElement('div');
+    product.classList.add('container');
+    product.innerHTML = `
+    <div class="container">
+    <div class="row">
+        <div class="col-3"></div>
+        <div class="col-6">
+            <nav aria-label="breadcrumb ">
+                <ol class="breadcrumb place-content-center">
+                    <li class="breadcrumb-item"><a href="/" class="text-dark"><strong>HOME</strong></a></li>
+                    <li class="breadcrumb-item" aria-current="page"><strong>PLATES</strong></li>
+                    <li class="breadcrumb-item active" aria-current="page">${item.title}</li>
+                </ol>
+            </nav>
+        </div>
+        <div class="col-3"></div>
+    </div>
+
+</div>
+<div class="container">
+    <div class="row mt-5" >
+    <div class="col"></div>
+            <div class="col-6">
+                <img src="image/${item.image}" alt="" style="height: 400px; width: 100%;">
+            </div>
+            <div class="col-5">
+                <div class="container-fluid h-100 ">
+                    <div class="col-12 border-bottom-gray h-75 text-center">
+                        <small class="position font-size-small text-muted"> <strong>${item.brand}</strong> </small>
+                        <h2 class="position font-size-h2">${item.title}</h2>
+                        <small class="position font-size-small text-muted">${item.price}</small>
+                        <p class="position text-muted">${item.description}</p>
+                    </div>
+                    <div class="row mt-5">
+                        <div class="col-3"></div>
+                        <div class="col-3">
+                            <div class="row">
+                                <div class="col-6 bg-color ">
+                                    <div id="result" class="text-center text-white margin35"><strong>0</strong></div>
+                                </div>
+                                <div class="col-6">
+                                    <div onclick="plus()" class="bg-color-2 text-center" style="margin: 0 0px 10px 0;">
+                                        <span>+</span></div>
+                                    <div onclick="moin()" class="bg-color-2 text-center"><span>-</span> </div>
+                                </div>
                             </div>
-                    </div>`
-                document.getElementById('reponse').appendChild(product);
-            });
-        }
-        var xhr = new XMLHttpRequest();
-        xhr.onreadystatechange = function () {
-            if (xhr.readyState === 4) {
-                var response = JSON.parse(xhr.responseText);
-                displayPost(response);
-            }
-        };
-        xhr.open('GET', 'products.txt',true);
+                        </div>
+                        <div class=" col-5">
+                            <button class="h-100 w-100 bg-dark text-white">ADD TO CART</button>
+                        </div>
+                        <div class=" col-1"></div>
+                    </div>
+                </div>
+            </div>
+            </div></div>`
+    document.getElementById('reponse').appendChild(product);
+}
+
+var xhr = new XMLHttpRequest();
+xhr.onreadystatechange = function () {
+    if (xhr.readyState === 4) {
+        var response = JSON.parse(xhr.responseText);
+        displayPost(response[postid]);
+    }
+};
+xhr.open('GET', 'products.txt', true);
 xhr.send();
