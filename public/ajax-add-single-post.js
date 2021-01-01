@@ -48,7 +48,6 @@ function displayPost(item) {
         </div>
         <div class="col-3"></div>
     </div>
-
 </div>
 <div class="container">
     <div class="row mt-5" >
@@ -61,7 +60,7 @@ function displayPost(item) {
                     <div class="col-12 border-bottom-gray h-75 text-center">
                         <small class="position font-size-small text-muted"> <strong>${item.brand}</strong> </small>
                         <h2 class="position font-size-h2">${item.title}</h2>
-                        <small class="position font-size-small text-muted">${item.price}</small>
+                        <small class="position font-size-small text-muted">$${item.price}.00</small>
                         <p class="position text-muted">${item.description}</p>
                     </div>
                     <div class="row mt-5">
