@@ -31,17 +31,3 @@ function displayPost(posts) {
         };
         xhr.open('GET', 'products.txt',true);
 xhr.send();
-
-//                 // <p> UserID = ${post.userId}</p>
-//                 // <p> PostID = ${post.id}</p>
-//                 // <h2>${post.title}</h2>
-//                 // <div>${post.body}</div>
-
-// let xhr = new XMLHttpRequest();
-
-// xhr.onreadystatechange = function () {
-//     console.log(this);
-// }
-
-// xhr.open('GET', '../json/products.txt', true);
-// xhr.send();
