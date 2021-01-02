@@ -71,9 +71,11 @@ function displayPost(item) {
                                     <div id="result" class="text-center text-white margin35"><strong>0</strong></div>
                                 </div>
                                 <div class="col-5">
-                                    <div onclick="plus()" class="bg-color-2 text-center" style="margin: 0 0px 10px 0;">
-                                        <span>+</span></div>
-                                    <div onclick="moin()" class="bg-color-2 text-center"><span>-</span> </div>
+                                    <button onclick="plus()" class="bg-color-2 text-center butomadd" style="margin: 0 0px 10px 0;">
+                                        +
+                                        </button>
+                                    <button onclick="moin()" class="bg-color-2 text-center butomadd">
+                                        - </button>
                                 </div>
                             </div>
                         </div>
