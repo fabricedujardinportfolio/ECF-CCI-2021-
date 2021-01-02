@@ -80,7 +80,7 @@ function displayPost(item) {
                             </div>
                         </div>
                         <div class=" col-5">
-                            <button class="h-100 w-100 bg-dark text-white">ADD TO CART</button>
+                            <button class="h-100 w-100 bg-dark text-white" onclick="location.href='/#'">ADD TO CART</button>
                         </div>
                         <div class=" col-1"></div>
                     </div>
