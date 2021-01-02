@@ -13,10 +13,6 @@
 //LINK
 @linkoff: none;
 
-a:link {
-    text-decoration: none;
-}
-
 //font-size
 @font-size-h2: 3em;
 @font-size-small: 1.2em;
@@ -31,6 +27,7 @@ a:link {
 @height-size-100vh: 100vh;
 @height-size-225px: 225px;
 @height-section-top-home: 300px;
+@sizeimg-product: 520px;
 
 //WIDTH
 @width-100-100: 100%;
@@ -136,4 +133,40 @@ body {
 
 .bg-color-2 {
     background-color: rgb(230, 227, 227);
+}
+
+.sizeimg {
+    height: 540px;
+    width: 100%;
+}
+
+//MEDIA QUERY 
+@media only screen and (max-width: 991px) {
+    .font-size-h2 {
+        font-size: 1.9em;
+    }
+
+    .sizeimg {
+        height: @sizeimg-product;
+    }
+
+    .sizespan {
+        text-align: left !important;
+    }
+}
+
+@media only screen and (max-width: 695px) {
+    .preview {
+        max-width: 160px;
+        max-height: 160px;
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 515px) {
+    .preview {
+        max-width: 120px;
+        max-height: 120px;
+        display: block;
+    }
 }

@@ -52,25 +52,25 @@ function displayPost(item) {
 <div class="container">
     <div class="row mt-5" >
     <div class="col"></div>
-            <div class="col-6">
-                <img src="image/${item.image}" alt="" style="height: 400px; width: 100%;">
+            <div class="col-12 col-md-6 ">
+                <img src="image/${item.image}"  class="sizeimg" >
             </div>
-            <div class="col-5">
+            <div class="col-12 col-md-5">
                 <div class="container-fluid h-100 ">
-                    <div class="col-12 border-bottom-gray h-75 text-center">
+                    <div class="col-12 border-bottom-gray h-65 text-center">
                         <small class="position font-size-small text-muted"> <strong>${item.brand}</strong> </small>
-                        <h2 class="position font-size-h2">${item.title}</h2>
+                        <h2 class="position font-size-h2 ">${item.title}</h2>
                         <small class="position font-size-small text-muted">$${item.price}.00</small>
                         <p class="position text-muted">${item.description}</p>
                     </div>
                     <div class="row mt-5">
-                        <div class="col-3"></div>
-                        <div class="col-3">
+                        <div class="col-2"></div>
+                        <div class="col-4">
                             <div class="row">
                                 <div class="col-6 bg-color ">
                                     <div id="result" class="text-center text-white margin35"><strong>0</strong></div>
                                 </div>
-                                <div class="col-6">
+                                <div class="col-5">
                                     <div onclick="plus()" class="bg-color-2 text-center" style="margin: 0 0px 10px 0;">
                                         <span>+</span></div>
                                     <div onclick="moin()" class="bg-color-2 text-center"><span>-</span> </div>
