@@ -1,13 +1,21 @@
 <!-- Header -->
 <header class="container-fluid">
     <div class="row">
-        <div class="col-2 col-md-2 col-lg-2 col-xl-2 d-none navdisplay1"></div>
-        <div class="col-2 col-md-2 col-lg-2 col-xl-2 centragelogo-mobile">
-            <div class="logo logocenter">
-                <img src="image/logo.png" alt="cette image représente le logo hero" onclick="location.href='/'" />
+        <div class="col-2 col-md-2 col-lg-2 col-xl-2 d-none navdisplay1">
+            <div class="containerburger" onclick="myFunction(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
             </div>
         </div>
-        <div class="col-8 col-md-8 col-lg-8 col-xl-8  d-none d-lg-block">
+        <div class="col-2 col-md-2 col-lg-2 col-xl-2 centragelogo-mobile">
+            <div class="logo logocenter">
+                <img src="image/logo.png" class="logocenterimg" alt="cette image représente le logo hero"
+                    onclick="location.href='/'" />
+            </div>
+        </div>
+
+        <div class="col-6 col-md-8 col-lg-8 col-xl-8  d-none d-lg-block ">
             <div class="navTop d-none d-sm-block">
                 <nav class="text-center d-none d-sm-block">
                     <a href="" class="menu nav-a-color">HOME</a>
@@ -17,9 +25,9 @@
                 </nav>
             </div>
         </div>
-        <div class="col-2 col-md-2 col-lg-2 col-xl-2">
+        <div class="col-3 col-md-2 col-lg-2 col-xl-2">
             <div class="carts verticalealigne-header-home">
-                <img class="d-md-none" src="image/panier.PNG"
+                <img class="d-md-none " src="image/panier.PNG"
                     alt="panier pour l'affichage des commande de l'utilisateur" /><span class="d-none d-md-inline">My
                     cartds</span><sup class="d-none d-md-inline">(2)</sup>
             </div>
