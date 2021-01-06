@@ -34,7 +34,7 @@ function displayPost(item) {
     let product = document.createElement('div');
     product.classList.add('container');
     product.innerHTML = `
-    <div class="container">
+    <div class="container ">
     <div class="row">
         <div class="col-3"></div>
         <div class="col-6">
@@ -49,7 +49,7 @@ function displayPost(item) {
         <div class="col-3"></div>
     </div>
 </div>
-<div class="container">
+<div class="container mb-5">
     <div class="row mt-5" >
     <div class="col"></div>
             <div class="col-12 col-md-6 ">
