@@ -287,10 +287,18 @@ body {
     background-color: @backgroundbg-gray-for-cards;
 }
 
+.margin--none {
+    margin-top: 15%;
+}
+
 //MEDIA QUERY 
 @media only screen and (max-width: 991px) {
     .font-size-h2 {
         font-size: 1.9em;
+    }
+
+    .margin--none {
+        margin-top: 10%;
     }
 
     .sizeimg {
@@ -319,6 +327,12 @@ body {
     .logocenter {
         text-align: center;
     }
+
+    .popup-overlay {
+        width: 70%;
+        height: 72%;
+        left: 35%;
+    }
 }
 
 @media only screen and (max-width: 515px) {
@@ -326,8 +340,18 @@ body {
         height: 150px;
     }
 
+    .popup-overlay {
+        width: 100%;
+        height: 80%;
+        left: 5%;
+    }
+
     .background-color-section-child-top-home {
         height: inherit;
+    }
+
+    .margin--none {
+        margin-top: 0%;
     }
 }
 
@@ -335,6 +359,8 @@ body {
     .logocenter {
         text-align: end;
     }
+
+
 
     .logocenterimg {
         width: 80px;
