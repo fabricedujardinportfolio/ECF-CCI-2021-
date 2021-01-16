@@ -4,8 +4,11 @@
 @background-section-top-home: url('image/plates-header.jpg');
 @backgroundbg-gray-for-cards: #EAEAEA;
 // @color-background-secondary: white;
-
+//COLOR
+@colorbouton66666: #666666;
+@colorffff: #ffffff;
 // TEXT
+@zero: 0;
 @color-global-text: black;
 @color-secondary: white;
 @color-tiers: rgb(57, 57, 53);
@@ -13,7 +16,8 @@
 @text-aligne-center: center;
 @text-aligne-end: end;
 @text-aligne-initial: initial;
-
+@text-underlined-less: underline;
+@text-underline-position: under;
 //LINK
 @linkoff: none;
 
@@ -24,44 +28,51 @@
 // MARGIN
 @margin-top-5: 5%;
 @margin-top-10: 10%;
+@margin-top-20: 20%;
 @margin-top-35: 35%;
 @margin-auto: auto;
-
+//PADDING
+@padding-2: 2%;
 // HEIGHT
 @height-size-100vh: 100vh;
 @height-size-225px: 225px;
 @height-section-top-home: 300px;
 @sizeimg-product: 520px;
+@height50: 50px;
 
 //WIDTH
 @width-100-100: 100%;
+@width200px: 200px;
 
 // POSITION CENTER
 @place-content-center: center;
-
+@inline: inline;
 //BORDER
-@border-bottom-gray: solid 1px gray;
+@solid: solid;
+@border-bottom-gray: @solid 1px gray;
 
-
+//etat
+@visible: visible;
+@hidden: hidden;
 
 body {
     background-color: @color-backgroud-global;
     color: @color-global-text;
-    padding: 0;
-    margin: 0;
+    padding: @zero;
+    margin: @zero;
     height: @height-size-100vh;
 }
 
 // HEADER TOP 
 //Header top parents>child
 .verticalealigne-header-home {
-    margin-top: 10%;
-    text-align: center;
+    margin-top: @zero;
+    text-align: @text-aligne-center;
 
 }
 
 .nav-a-color {
-    text-decoration: none;
+    text-decoration: @linkoff;
     color: @color-tiers;
     font-weight: 800;
     font-family: "Arial",
@@ -87,7 +98,7 @@ body {
     width: 35px;
     height: 5px;
     background-color: #333;
-    margin: 6px 0;
+    margin: 6px @zero;
     transition: 0.4s;
 }
 
@@ -97,7 +108,7 @@ body {
 }
 
 .change .bar2 {
-    opacity: 0;
+    opacity: @zero;
 }
 
 .change .bar3 {
@@ -173,7 +184,7 @@ body {
 }
 
 .hidden {
-    display: none;
+    display: @linkoff;
 }
 
 .bg-color-2 {
@@ -186,24 +197,24 @@ body {
 
 .sizeimg {
     height: 540px;
-    width: 100%;
+    width: @width-100-100;
 }
 
 .navbar,
 .navbar-inverse {
-    border-radius: 0;
-    border: none;
-    margin-bottom: 0;
+    border-radius: @zero;
+    border: @linkoff;
+    margin-bottom: @zero;
     min-height: 80px;
 }
 
 .nav li {
-    display: inline;
+    display: @inline;
     color: white;
 }
 
 .navbar-inverse .navbar-nav>li>a {
-    color: #ffffff;
+    color: @colorffff;
     font-family: Lato;
     font-size: 1.7em;
     font-weight: 300;
@@ -213,23 +224,23 @@ body {
 .navbar-inverse .navbar-nav li a:hover {
     background-color: #444444;
     transition: 0.7s all linear;
-    height: 100%;
+    height: @width-100-100;
 }
 
 //popup
 .hcontainerpopuptml {
     font-family: "Helvetica Neue", sans-serif;
-    width: 100%;
-    color: #666666;
-    text-align: center;
+    width: @width-100-100;
+    color: @colorbouton66666;
+    text-align: @text-aligne-center;
 }
 
 .popup-overlay {
     /*Hides pop-up when there is no "active" class*/
-    visibility: hidden;
+    visibility: @hidden;
     position: absolute;
-    background: #ffffff;
-    border: 3px solid #666666;
+    background: @colorffff;
+    border: 3px @solid @colorbouton66666;
     z-index: 1000;
     width: 40%;
     height: 72%;
@@ -238,48 +249,73 @@ body {
 
 .popup-overlay.active {
     /*displays pop-up when "active" class is present*/
-    visibility: visible;
-    text-align: center;
+    visibility: @visible;
+    text-align: @text-aligne-center;
 }
 
 .popup-content {
     /*Hides pop-up content when there is no "active" class */
-    visibility: hidden;
+    visibility: @hidden;
 }
 
 .popup-content.active {
     /*Shows pop-up content when "active" class is present */
-    visibility: visible;
+    visibility: @visible;
 }
 
 .delette {
-    visibility: hidden;
+    visibility: @hidden;
 }
 
 .button1 {
     display: inline-block;
     vertical-align: middle;
     border-radius: 30px;
-    margin: .20rem;
+    margin: 2rem;
     font-size: 1rem;
-    color: #666666;
-    background: #ffffff;
-    border: 1px solid #666666;
+    color: @colorbouton66666;
+    background: @colorffff;
+    border: 1px @solid @colorbouton66666;
 }
 
 .button1:hover {
-    border: 1px solid #666666;
-    background: #666666;
-    color: #ffffff;
+    border: 1px @solid @colorbouton66666;
+    background: @colorbouton66666;
+    color: @colorffff;
 }
 
 //CART 
 .bg-gray-for-cards {
     background-color: @backgroundbg-gray-for-cards;
+    padding: @padding-2 @margin-top-20 @zero @margin-top-20;
 }
 
 .text-aligne-initial {
     text-align: @text-aligne-initial;
+}
+
+// all product cart
+.text-underlined-less {
+    text-decoration: @text-underlined-less;
+    text-underline-position: @text-underline-position;
+}
+
+.boutonallcardparents {
+    text-align: @text-aligne-end;
+    margin-bottom: @margin-top-5;
+}
+
+.boutonallcard {
+    margin-right: @margin-top-10 ;
+    height: @height50;
+    width: @width200px;
+    background-color: @color-global-text;
+    color: @colorffff ;
+
+}
+
+.titleshoppingcard {
+    padding-bottom: 2%;
 }
 
 // FOOTER
@@ -288,7 +324,7 @@ body {
 }
 
 .margin--none {
-    margin-top: 15%;
+    margin-top: @zero;
 }
 
 //MEDIA QUERY 
@@ -298,7 +334,7 @@ body {
     }
 
     .margin--none {
-        margin-top: 10%;
+        margin-top: 0;
     }
 
     .sizeimg {
@@ -311,8 +347,8 @@ body {
 
     .navdisplay1 {
         display: block !important;
-        text-align: center;
-        margin-top: auto;
+        text-align: @text-aligne-center;
+        margin-top: @margin-auto;
     }
 
     .centragelogo-mobile {
@@ -320,12 +356,12 @@ body {
     }
 
     .navdisplay {
-        display: none;
+        display: @linkoff;
 
     }
 
     .logocenter {
-        text-align: center;
+        text-align: @text-aligne-center;
     }
 
     .popup-overlay {
@@ -341,7 +377,7 @@ body {
     }
 
     .popup-overlay {
-        width: 100%;
+        width: @width-100-100;
         height: 80%;
         left: 5%;
     }
@@ -351,13 +387,13 @@ body {
     }
 
     .margin--none {
-        margin-top: 0%;
+        margin-top: @zero;
     }
 }
 
 @media only screen and (max-width: 260px) {
     .logocenter {
-        text-align: end;
+        text-align: @text-aligne-end;
     }
 
 
