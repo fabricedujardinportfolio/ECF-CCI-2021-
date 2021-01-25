@@ -1,4 +1,3 @@
-
 function displayPost(posts) {
             posts.forEach(post => {
                 // console.log(post);
