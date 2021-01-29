@@ -65,9 +65,27 @@ body {
 
 // HEADER TOP 
 //Header top parents>child
+.width-500 {
+    width: 158px;
+}
+
+.logocenterimg {
+    // width: 80px;
+    display: none;
+}
+
+.sorryjonathanforbadpositionisootiredoftheproject {
+    text-align: end;
+}
+
+.text-align-ini {
+    text-align: initial;
+}
+
 .verticalealigne-header-home {
     margin-top: @zero;
     text-align: @text-aligne-center;
+    display: flex;
 
 }
 
@@ -243,8 +261,8 @@ body {
     border: 3px @solid @colorbouton66666;
     z-index: 1000;
     width: 40%;
-    height: 72%;
-    left: 58%;
+    left: 60%;
+    top: 70%;
 }
 
 .popup-overlay.active {
@@ -327,14 +345,34 @@ body {
     margin-top: @zero;
 }
 
+.logocentre {
+    display: none;
+}
+
+.t6remtext {
+    font-size: 0.7rem;
+}
+
 //MEDIA QUERY 
 @media only screen and (max-width: 991px) {
     .font-size-h2 {
         font-size: 1.9em;
     }
 
+    .disparitionblock {
+        display: none;
+    }
+
     .margin--none {
         margin-top: 0;
+    }
+
+    .logo01 {
+        display: none;
+    }
+
+    .logocentre {
+        display: block;
     }
 
     .sizeimg {
@@ -366,8 +404,7 @@ body {
 
     .popup-overlay {
         width: 70%;
-        height: 72%;
-        left: 25%;
+        left: 43%;
     }
 }
 
@@ -378,7 +415,6 @@ body {
 
     .popup-overlay {
         width: 84%;
-        height: 80%;
         left: 15%;
     }
 
@@ -396,9 +432,13 @@ body {
         text-align: @text-aligne-end;
     }
 
+    .t6remtext {
+        font-size: 0.65rem;
+    }
 
 
     .logocenterimg {
-        width: 80px;
+        // width: 80px;
+        display: none;
     }
 }
