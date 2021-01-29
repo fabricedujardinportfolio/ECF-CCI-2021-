@@ -1,4 +1,5 @@
 ## ECF CCI FABRICE
+- localhost:3000
 
 ### Softwares required
 - NodeJS
@@ -15,7 +16,7 @@
 
 ### CSS
 
-- LESS
+- LESS (Compilé le code LESS avant de lancer le localhost:3000)
 
  
 ### Install the project dependencies
