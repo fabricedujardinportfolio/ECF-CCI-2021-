@@ -16,7 +16,7 @@
 
 ### CSS
 
-- LESS (Compilé le code LESS avant de lancer le localhost:3000)
+- LESS (Compiled the LESS code before running the localhost:3000)
 
  
 ### Install the project dependencies
