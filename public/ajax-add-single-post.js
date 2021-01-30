@@ -36,8 +36,8 @@ function displayPost(item) {
     product.innerHTML = `
     <div class="container ">
     <div class="row">
-        <div class="col-3"></div>
-        <div class="col-6">
+        <div class="col-3 d-md-block d-none"></div>
+        <div class="col-12">
             <nav aria-label="breadcrumb ">
                 <ol class="breadcrumb place-content-center">
                     <li class="breadcrumb-item"><a href="/" class="text-dark"><strong>HOME</strong></a></li>
@@ -46,7 +46,7 @@ function displayPost(item) {
                 </ol>
             </nav>
         </div>
-        <div class="col-3"></div>
+        <div class="col-3 d-md-block d-none"></div>
     </div>
 </div>
 <div class="container mb-5">
@@ -64,13 +64,13 @@ function displayPost(item) {
                         <p class="position text-muted">${item.description}</p>
                     </div>
                     <div class="row mt-5">
-                        <div class="col-2"></div>
-                        <div class="col-4">
+                        <div class="col-2 d-none d-md-block"></div>
+                        <div class="col-6 col-md-4">
                             <div class="row">
                                 <div class="col-6 bg-color ">
                                     <div id="result" class="text-center text-white margin35"><strong>0</strong></div>
                                 </div>
-                                <div class="col-5">
+                                <div class="col-6">
                                     <button onclick="plus()" class="bg-color-2 text-center butomadd" style="margin: 0 0px 10px 0;">
                                         +
                                         </button>
@@ -79,10 +79,10 @@ function displayPost(item) {
                                 </div>
                             </div>
                         </div>
-                        <div class=" col-5">
+                        <div class=" col-6 col-md-4">
                             <button class="h-100 w-100 bg-dark text-white" onclick="location.href='/#'">ADD TO CART</button>
                         </div>
-                        <div class=" col-1"></div>
+                        <div class=" col-1 d-none d-md-block"></div>
                     </div>
                 </div>
             </div>
