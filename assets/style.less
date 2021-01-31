@@ -180,6 +180,80 @@ body {
     border-bottom: @border-bottom-gray;
 }
 
+.seeblockajaxparents {
+    top: 25%;
+
+}
+
+// DEBUT
+/********* Superposition simple de texte sur une image *******/
+
+
+/* Conteneur principal */
+.overlay-image {
+    position: relative;
+    width: 100%;
+}
+
+/* Image originale */
+.overlay-image .image {
+    display: block;
+    width: 100%;
+    height: 200px;
+}
+
+/* Texte original */
+.overlay-image .text {
+    color: #fff;
+    font-size: 30px;
+    line-height: 1.5em;
+    text-shadow: 2px 2px 2px #000;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+
+/********* Hover image et texte *******/
+/* Overlay */
+.overlay-image .hover {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 95%;
+    opacity: 0;
+    transition: .5s ease;
+}
+
+/* Apparition overlay sur passage souris */
+.overlay-image:hover .hover {
+    opacity: 2;
+}
+
+/********* Hover background et texte uniquement *******/
+.overlay-image .normal {
+    transition: .5s ease;
+}
+
+.overlay-image:hover .normal {
+    opacity: 0;
+}
+
+.overlay-image .hover {
+    background-color: rgba(250, 243, 243, 0.76);
+}
+
+// FIN
+.imageblock {
+    // z-index: 100;
+}
+
+.seeblockajax {
+    // display: none;
+}
+
 .position {
     margin-top: @margin-top-5;
 }
@@ -359,6 +433,19 @@ body {
 }
 
 //MEDIA QUERY 
+@media only screen and (max-width: 1200px) {
+
+    /* Overlay */
+    .overlay-image .hover {
+        position: absolute;
+        top: 0;
+        height: 100%;
+        width: 92%;
+        opacity: 0;
+        transition: .5s ease;
+    }
+}
+
 @media only screen and (max-width: 991px) {
     .font-size-h2 {
         font-size: 1.9em;
@@ -431,6 +518,19 @@ body {
 
     .margin--none {
         margin-top: @zero;
+    }
+}
+
+@media only screen and (max-width: 415px) {
+
+    /* Overlay */
+    .overlay-image .hover {
+        position: absolute;
+        top: 0;
+        height: 100%;
+        width: 86%;
+        opacity: 0;
+        transition: .5s ease;
     }
 }
 
